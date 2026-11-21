@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>routine-uploader プライバシーポリシー</title>
+<style>
+  body { font-family: "Yu Gothic UI", "Meiryo", "Hiragino Sans", sans-serif; line-height: 1.8; color: #1f2328; background: #ffffff; max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 1.6em; border-bottom: 3px solid #1a73e8; padding-bottom: 6px; }
+  h2 { font-size: 1.15em; margin-top: 2em; }
+  a { color: #0b57d0; word-break: break-all; }
+  .en { color: #444; border-top: 1px solid #ddd; margin-top: 3em; padding-top: 1em; }
+  footer { margin-top: 3em; font-size: 0.9em; color: #555; }
+</style>
+</head>
+<body>
+<h1>routine-uploader プライバシーポリシー</h1>
+<p>最終更新：2026年11月21日</p>
+
+<h2>1. このツールについて</h2>
+<p>routine-uploader（以下「本ツール」）は、運営者本人が、自分の YouTube チャンネルに自分で作った動画を投稿するためだけに使う個人用のツールです。第三者にサービスとして提供していません。利用者は運営者本人のみです。</p>
+<p><strong>本ツールは YouTube API サービスを使用しています。</strong> 本ツールを使用する場合、<a href="https://www.youtube.com/t/terms">YouTube 利用規約</a>に同意したものとみなされます。Google によるデータの扱いについては <a href="http://www.google.com/policies/privacy">Google プライバシーポリシー</a>をご覧ください。</p>
+
+<h2>2. アクセスする Google ユーザーデータ</h2>
+<p>本ツールは、Google の OAuth で運営者本人が許可した次の範囲（スコープ）だけを求めます。</p>
+<ul>
+  <li><code>https://www.googleapis.com/auth/youtube.upload</code>（動画とサムネイルのアップロード）</li>
+  <li><code>https://www.googleapis.com/auth/youtube.force-ssl</code>（投稿先チャンネルの確認、投稿した動画の状態の確認と設定の修正）</li>
+</ul>
+<p>本ツールが実際に読み書きするのは次のものだけです。</p>
+<ul>
+  <li><strong>読み取り</strong>：許可したチャンネルのチャンネル ID とチャンネル名（投稿先が正しいかの確認のため）、本ツールでアップロードした動画の ID・処理状況・公開設定・予約時刻。</li>
+  <li><strong>書き込み</strong>：動画ファイルのアップロード、およびその動画のタイトル・説明・タグ・カテゴリ・言語・公開設定（非公開／予約公開など）・サムネイル・申告項目（子ども向けかどうか、AI などによる改変・合成コンテンツかどうか、有料プロモーションの有無）の設定。</li>
+</ul>
+<p>コメント、評価、登録者、アナリティクス、メールアドレス、その他の Google アカウントの情報は読み取りません。</p>
+
+<h2>3. データの使い方</h2>
+<p>上記のデータは、運営者本人のチャンネルに動画を投稿し、投稿が正しくできたかを確認するためだけに使います。広告、販売、プロファイリング、AI や機械学習モデルの学習には使いません。</p>
+<p>本ツールによる Google API から受け取った情報の使用と他のアプリへの転送は、Limited Use（使用制限）要件を含む <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API サービスのユーザーデータに関するポリシー</a>に従います。</p>
+
+<h2>4. 保存する場所と守り方</h2>
+<ul>
+  <li><strong>アクセストークン・リフレッシュトークン</strong>（許可の証明）は、運営者本人の PC 内のフォルダにファイルとして保存します。このファイルは公開せず、チャットやメッセージにも貼りません。</li>
+  <li><strong>投稿の記録</strong>（日時、チャンネル名、動画 ID、タイトル、成否）を、運営者本人の PC 内のログファイルに保存します。トークンの中身はログに書きません。</li>
+  <li>運営者のサーバーやクラウドにはデータを保存しません（運営者はサーバーを持っていません）。</li>
+</ul>
+
+<h2>5. 外部への送信・共有</h2>
+<ul>
+  <li>トークンは、YouTube API を呼び出すために Google のサーバーへ送る以外、どこにも送信しません。</li>
+  <li>動画とその設定は、投稿のために YouTube（Google）へ送信します。</li>
+  <li>運営者は、本人の PC 上の作業を AI アシスタント（Anthropic 社の Claude）で自動化しており、本ツールはそこから起動されることがあります。その場合、本ツールが画面に表示する実行結果（チャンネル名、動画 ID、タイトル、成否）はそのアシスタントにも表示されます。トークンの中身は表示しません。</li>
+  <li>上記以外の第三者に、データを販売・提供・共有することはありません。</li>
+</ul>
+
+<h2>6. 保存期間と削除</h2>
+<ul>
+  <li>トークンは、許可が取り消されるか、運営者が本ツールの使用をやめるまで保存します。</li>
+  <li>許可が取り消された場合、運営者はそれを確認してから7日以内に、PC 内の該当するトークンのファイルを削除します。</li>
+  <li>投稿の記録（ログ）は運営者の PC 内にあり、運営者がいつでも削除できます。</li>
+</ul>
+
+<h2>7. 許可の取り消し方</h2>
+<p>本ツールへの許可は、いつでも <a href="https://security.google.com/settings/security/permissions">Google のセキュリティ設定ページ（https://security.google.com/settings/security/permissions）</a>で「routine-uploader」のアクセス権を削除することで取り消せます。取り消した時点で、本ツールはそのチャンネルに投稿できなくなります。</p>
+
+<h2>8. お問い合わせ</h2>
+<p>このポリシーや本ツールのデータの扱いについてのご質問・苦情は、運営者（poteb90@gmail.com）までご連絡ください。</p>
+
+<h2>9. 変更</h2>
+<p>本ツールの動作を変える場合（扱うデータが増える場合など）は、先にこのページを更新し、最終更新日を変えます。</p>
+
+<div class="en">
+<h2>English summary</h2>
+<p><strong>routine-uploader is a personal tool used only by its owner to upload the owner's own videos to the owner's own YouTube channels. It is not offered to anyone else. This tool uses YouTube API Services.</strong> By using it, users agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See also the <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.</p>
+<ul>
+  <li><strong>Scopes:</strong> youtube.upload and youtube.force-ssl.</li>
+  <li><strong>Data accessed:</strong> the authorized channel's ID and name (to confirm the target channel); the ID, processing status, privacy status and scheduled time of videos uploaded by this tool. It writes only the uploaded videos and their metadata (title, description, tags, category, language, privacy/schedule, thumbnail, and declarations such as made-for-kids, altered/synthetic content and paid promotion). It does not read comments, ratings, subscribers, analytics or email addresses.</li>
+  <li><strong>Use:</strong> only to upload the owner's videos and confirm the uploads. Never for advertising, sale, profiling, or training AI/ML models. Use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+  <li><strong>Storage:</strong> OAuth tokens are stored only as files on the owner's PC; an upload log (time, channel name, video ID, title, result) is kept on the same PC and never contains token values. No server or cloud storage is used.</li>
+  <li><strong>Sharing:</strong> tokens are sent only to Google's servers to call the API; videos and metadata are sent to YouTube. The owner automates work on their PC with an AI assistant (Anthropic's Claude), which may launch this tool and see its console output (channel name, video ID, title, result) but not token values. No other sharing.</li>
+  <li><strong>Retention and deletion:</strong> tokens are kept until access is revoked or the tool is no longer used; after a revocation, the token file is deleted within 7 days. Logs can be deleted by the owner at any time.</li>
+  <li><strong>Revoking access:</strong> <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a></li>
+  <li><strong>Contact:</strong> poteb90@gmail.com</li>
+</ul>
+</div>
+
+<footer><a href="index.html">routine-uploader トップへ / Home</a></footer>
+</body>
+</html>
